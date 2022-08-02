@@ -1,0 +1,38 @@
+[package]
+name = "snmp-grammar"
+version = "0.1.0"
+authors = ["The Sonalake Project Developers"]
+edition = "2021"
+
+[dependencies]
+gll = "0.0.3"
+
+proc-macro2 = "1.0.42"
+structopt = "0.3"
+walkdir = "2.3"
+rayon = "1.0"
+derive_more = "0.99.17"
+serde_derive = "1.0"
+toml = "0.5"
+serde = "1.0"
+failure = "0.1"
+insta = "1.17"
+crossbeam = "0.8"
+regex = "1.6"
+lazy_static = "1.4"
+
+[build-dependencies]
+gll = "0.0.3"
+walkdir = "2.3"
+
+[[bin]]
+name = "coverage"
+path = "src/bin/coverage.rs"
+
+[[bin]]
+name = "snapshots"
+path = "src/bin/snapshots.rs"
+
+[patch.'crates-io']
+grammer = { git = "https://github.com/frankhorv/grammer", rev = "ac93e578e68d219d54c569a5c6380037f4bcd714" }
+gll = { git = "https://github.com/frankhorv/gll", rev = "c9c59a29b695fb174ff01de7477fd48384644042" }

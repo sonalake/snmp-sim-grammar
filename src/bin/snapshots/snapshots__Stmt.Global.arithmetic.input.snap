@@ -1,0 +1,331 @@
+---
+source: src/bin/snapshots.rs
+expression: forest
+---
+Ok(
+    Stmt::Static {
+        init: Expr {
+            kind: ExprKind::Binary {
+                left: Expr {
+                    kind: ExprKind::Literal,
+                },
+                op: BinaryOp::Mul,
+                right: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Add,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Div,
+                                right: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Sub,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                            } | ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Div,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                                op: BinaryOp::Sub,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Add,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Div,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Sub,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Add,
+                                right: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Div,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                            } | ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Add,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                                op: BinaryOp::Div,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Sub,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+            } | ExprKind::Binary {
+                left: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Mul,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+                op: BinaryOp::Add,
+                right: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Div,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Sub,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Div,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Sub,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+            } | ExprKind::Binary {
+                left: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Mul,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Add,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Mul,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Add,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+                op: BinaryOp::Div,
+                right: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Sub,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+            } | ExprKind::Binary {
+                left: Expr {
+                    kind: ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                        op: BinaryOp::Mul,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Add,
+                                right: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Div,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                            } | ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Add,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                                op: BinaryOp::Div,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Mul,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Add,
+                        right: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Div,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                    } | ExprKind::Binary {
+                        left: Expr {
+                            kind: ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                                op: BinaryOp::Mul,
+                                right: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Add,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                            } | ExprKind::Binary {
+                                left: Expr {
+                                    kind: ExprKind::Binary {
+                                        left: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                        op: BinaryOp::Mul,
+                                        right: Expr {
+                                            kind: ExprKind::Literal,
+                                        },
+                                    },
+                                },
+                                op: BinaryOp::Add,
+                                right: Expr {
+                                    kind: ExprKind::Literal,
+                                },
+                            },
+                        },
+                        op: BinaryOp::Div,
+                        right: Expr {
+                            kind: ExprKind::Literal,
+                        },
+                    },
+                },
+                op: BinaryOp::Sub,
+                right: Expr {
+                    kind: ExprKind::Literal,
+                },
+            },
+        },
+    },
+)

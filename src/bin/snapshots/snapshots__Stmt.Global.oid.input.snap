@@ -1,0 +1,19 @@
+---
+source: src/bin/snapshots.rs
+expression: forest
+---
+Ok(
+    Stmt::Static {
+        init: Expr {
+            kind: ExprKind::OidCall {
+                oid: OidArgs {
+                    value: [
+                        OidSegment {
+                            seg: _,
+                        },
+                    ],
+                },
+            },
+        },
+    },
+)

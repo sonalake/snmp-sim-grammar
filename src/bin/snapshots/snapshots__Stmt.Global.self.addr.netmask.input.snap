@@ -1,0 +1,17 @@
+---
+source: src/bin/snapshots.rs
+expression: forest
+---
+Ok(
+    Stmt::Static {
+        init: Expr {
+            kind: ExprKind::SelfField {
+                field: SelfField {
+                    addr: {
+                        func: SelfAddrFunction::Netmask,
+                    },
+                },
+            },
+        },
+    },
+)

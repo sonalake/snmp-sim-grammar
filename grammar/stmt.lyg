@@ -1,0 +1,4 @@
+Stmt =
+  | Static:{ "set" init:Expr }
+  | Dynamic:Expr
+  ;

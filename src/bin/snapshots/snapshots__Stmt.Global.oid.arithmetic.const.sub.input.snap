@@ -1,0 +1,27 @@
+---
+source: src/bin/snapshots.rs
+expression: forest
+---
+Ok(
+    Stmt::Static {
+        init: Expr {
+            kind: ExprKind::Binary {
+                left: Expr {
+                    kind: ExprKind::OidCall {
+                        oid: OidArgs {
+                            value: [
+                                OidSegment {
+                                    seg: _,
+                                },
+                            ],
+                        },
+                    },
+                },
+                op: BinaryOp::Sub,
+                right: Expr {
+                    kind: ExprKind::Literal,
+                },
+            },
+        },
+    },
+)

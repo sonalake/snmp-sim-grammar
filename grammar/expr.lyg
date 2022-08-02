@@ -1,0 +1,40 @@
+Expr = kind:ExprKind;
+ExprKind =
+  | Literal:LITERAL
+  | Paren:{ "(" expr:Expr ")" }
+  | Unary:{ op:UnaryOp expr:Expr }
+  | Binary:{ left:Expr op:BinaryOp right:Expr }
+  | OidCall:{ "oid" oid:OidArgs }
+  | SelfField:{ "self." field: SelfField }
+  | SelfFunc:{ "self." func: SelfFunction }
+  ;
+
+EmptyArgs = "()";
+OidArgs = { "(" value:OidSegment+ ")" };
+OidSegment =  { "."? seg:LITERAL };
+
+UnaryOp =
+  | Not:"!"
+  | Neg:"-";
+
+BinaryOp =
+  | Add:"+"
+  | Sub:"-"
+  | Mul:"*"
+  | Div:"/"
+  ;
+
+SelfFunction =
+  | index:{ "index" EmptyArgs }
+  ;
+
+SelfField =
+  | addr:{ "addr." func:SelfAddrFunction }
+  ;
+
+SelfAddrFunction =
+  | Ip:{ "ip" EmptyArgs }
+  | Netmask:{ "netmask" EmptyArgs }
+  | Mac:{ "mac" EmptyArgs }
+  | Gateway:{ "gateway" EmptyArgs }
+  ;
