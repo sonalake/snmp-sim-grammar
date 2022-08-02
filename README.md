@@ -10,12 +10,9 @@ times faster. It supports several subcommands to point it at different files
 or directories to examine. For example, if you check out the submodule
 (explained below), you can run the tests with the following command:
 
-    cargo run --bin coverage --release -- dir external/rust/src
+    cargo run --bin coverage --release -- dir testdata/ --verbose
 
-This repository includes a submodule to the main rust repo to use as a
-collection of Rust code to test against the grammar. The command `git
-submodule update --init` may be used to fetch it. However, it is not necessary
-and you may run the tool against any collection of Rust code at your disposal.
+This repository includes a set of testdata to test against the grammar.
 
 ### Snapshot tests
 
