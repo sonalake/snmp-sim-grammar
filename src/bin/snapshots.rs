@@ -44,7 +44,7 @@ fn test_snapshot(file: walkdir::DirEntry) {
     let path = file.path();
     let file_name = file.file_name().to_str().unwrap();
     let src = fs::read_to_string(path).unwrap();
-    let production = &file_name[..file_name.find('.').unwrap_or_else(|| file_name.len())];
+    let production = &file_name[..file_name.find('.').unwrap_or(file_name.len())];
     let forest = dispatch! { src, production;
         // expr.lyg
         Expr ExprKind UnaryOp BinaryOp
@@ -90,9 +90,7 @@ fn main() {
         });
 
     // Collect failures
-    let failures: Vec<_> = snapshots.filter_map(Result::err).collect();
-
-    if failures.is_empty() {
+    if snapshots.filter_map(Result::err).next().is_none() {
         println!("All snapshots passed!");
     } else {
         exit(1);
